@@ -2,7 +2,7 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <div className='w-full px-20 py-8 font-["Neue Montreal"] flex justify-between item-center'>
+    <div className='w-full px-20 py-8 font-["Neue Montreal"] flex justify-between item-center bg-zinc-900'>
         <div className='logo'>
             Logo
         </div>
