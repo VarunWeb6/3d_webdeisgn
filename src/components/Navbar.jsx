@@ -7,8 +7,8 @@ function Navbar() {
             Logo
         </div>
         <div className="links flex gap-10">
-            {["Services", "Our Work", "About Us", "Insights"].map((item,index)=>(
-                <a key={index} className='"text-md Capitalize font-light'>{item}</a>
+            {["Services", "Our Work", "About Us", "Insights", "Contact"].map((item,index)=>(
+                <a key={index} className={`text-md Capitalize font-light ${index === 4 && "ml-32"}`}>{item}</a>
             ))}
         </div>
 
