@@ -17,7 +17,7 @@ function LandingPage() {
                         </div>
                     </div>
                 ))}
-                <div className="border-t-[1px] border-zinc-800 mt-36 flex justify-between items-center px-5 py-5 space-x-5">
+                <div className="border-t-[1px] border-zinc-800 mt-[15vw] flex justify-between items-center px-5 py-5 space-x-5">
                     {["For public and private companies", "For the first patch to IPO"].map((item, index) => (
                         <div className="Elem">
                             <p className="text-md font-light capitalize tracking-light leading-none">{item}</p>
