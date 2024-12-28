@@ -33,7 +33,7 @@ function Eyes() {
 
   return (
     <div className="eyes w-full h-screen overflow-hidden">
-      <div
+      <div data-scroll data-scroll-section data-scroll-speed="-.7"
         className="relative w-full h-full bg-cover bg-center 
           bg-[url('https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-1440x921.jpg')] drop-shadow-3xl"
       >
@@ -79,13 +79,6 @@ function Eyes() {
                 </div>
               </div>
             </div>
-          </div>
-
-          {/* "Play" Text */}
-          <div className="text-center mt-4">
-            <h1 className="text-4xl font-bold text-black drop-shadow-2xl">
-              Play
-            </h1>
           </div>
         </div>
       </div>

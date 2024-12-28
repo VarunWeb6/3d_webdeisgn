@@ -1,15 +1,23 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 import { FaArrowRight } from "react-icons/fa6";
 
 function LandingPage() {
+
     return (
-        <div className='w-full h-screen bg-zinc-900 pt-1'>
+        <div data-scroll data-scroll-speed="-.3" className='w-full h-screen pt-1'>
             <div className='textstructure mt-32 px-20'>
                 {["We Create", "Eye-Opening", "Presentation"].map((item, index) => (
                     <div className="masker">
                         <div className='w-fit flex items-end'>
                             {index === 1 && (
-                                <div className='w-[6.3vw] h-[4.5vw] bg-red-500 flex items-stretch'></div>
+                                <motion.div 
+                                initial={{width:0}} 
+                                animate={{width:"6.3vw"}} 
+                                transition={{ease : [0.76,0,0.24,1], duration : 1}} 
+                                className='w-[7vw] h-[4.5vw] bg-red-500 flex items-stretch rounded-xl'>
+                                    <img className='w-full h-full rounded-xl' src="https://t4.ftcdn.net/jpg/08/68/34/41/360_F_868344165_mJHIIrRfX5UQuLux45zIZc74r78WMxRb.jpg" alt="" />
+                                </motion.div>
                             )}
                             <h1 className="flex item-center uppercase h-full text-[6vw] leading-[5.5vw] tracking-tighter font-bold">
                                 {item}
