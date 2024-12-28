@@ -6,29 +6,26 @@ export default function FeaturedProjects() {
 
     return (
         <div
-            data-scroll
-            data-scroll-section
-            data-scroll-speed="-0.4"
             className="w-full py-12"
         >
             {/* Header Section */}
-            <div className="w-full px-20 border-b-[1px] pb-16 border-zinc-700">
-                <h1 className="text-7xl font-thin tracking-tight mb-12">
+            <div className="w-full px-6 sm:px-10 lg:px-20 border-b-[1px] pb-8 sm:pb-16 border-zinc-700">
+                <h1 className="text-4xl sm:text-6xl lg:text-7xl font-thin tracking-tight mb-8 sm:mb-12">
                     Featured Projects
                 </h1>
             </div>
 
             {/* Projects Section */}
-            <div className="px-20">
-                <div className="cards w-full flex gap-10 mt-10">
+            <div className="px-6 sm:px-10 lg:px-20">
+                <div className="cards w-full flex flex-col lg:flex-row gap-6 sm:gap-10 mt-10">
                     {/* Project Card 1 */}
                     <div
                         onMouseEnter={() => setHoveredCard("FYDE")}
                         onMouseLeave={() => setHoveredCard(null)}
-                        className="card-container relative w-1/2 h-[75vh]"
+                        className="card-container relative w-full lg:w-1/2 h-[50vh] sm:h-[60vh] lg:h-[75vh]"
                     >
                         {/* Floating Title */}
-                        <h1 className="absolute flex left-full overflow-hidden text-[#CDEA68] -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] text-8xl tracking-tighter leading-none">
+                        <h1 className="absolute flex left-full overflow-hidden text-[#CDEA68] -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] text-6xl sm:text-7xl lg:text-8xl tracking-tighter leading-none">
                             {"FYDE".split("").map((item, index) => (
                                 <motion.span
                                     key={index}
@@ -64,10 +61,10 @@ export default function FeaturedProjects() {
                     <div
                         onMouseEnter={() => setHoveredCard("VISE")}
                         onMouseLeave={() => setHoveredCard(null)}
-                        className="card-container relative w-1/2 h-[75vh]"
+                        className="card-container relative w-full lg:w-1/2 h-[50vh] sm:h-[60vh] lg:h-[75vh]"
                     >
                         {/* Floating Title */}
-                        <h1 className="absolute flex overflow-hidden right-full text-[#CDEA68] translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] text-8xl tracking-tighter leading-none">
+                        <h1 className="absolute flex overflow-hidden right-full text-[#CDEA68] translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] text-6xl sm:text-7xl lg:text-8xl tracking-tighter leading-none">
                             {"VISE".split("").map((item, index) => (
                                 <motion.span
                                     key={index}

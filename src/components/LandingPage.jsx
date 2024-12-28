@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa6";
 function LandingPage() {
 
     return (
-        <div data-scroll data-scroll-speed="-.3" className='w-full h-screen pt-1'>
+        <div data-scroll data-scroll-speed="-.4" className='w-full h-screen pt-1'>
             <div className='textstructure mt-32 px-20'>
                 {["We Create", "Eye-Opening", "Presentation"].map((item, index) => (
                     <div className="masker">
